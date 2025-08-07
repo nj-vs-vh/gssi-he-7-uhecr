@@ -15,5 +15,5 @@ def label_axes(ax: plt.Axes, xlabel: str | None = None, ylabel: str | None = Non
         if not units_label or units_label == "$\\mathrm{}$":
             units = ""
         else:
-            units = f" [{units_label}]"
+            units = f" / {units_label}"
         setter(f"$ {label} $" + units)
